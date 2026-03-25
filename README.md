@@ -1,70 +1,104 @@
 # DotCraft
 
-An interactive, browser-based training plan for building the **MarketFlow API** from scratch — from a clean Git repo all the way to a production-ready ASP.NET Core 10 application.
+> An interactive, browser-based training plan for building the **MarketFlow API** — from a clean Git repo to a production-ready ASP.NET Core 10 application.
 
-## What is this?
+[![Live App](https://img.shields.io/badge/Live%20App-MarketFlow%20Course-5ba8ff?style=for-the-badge&logo=github)](https://kbourzayq.github.io/MarketFlow/)
+![Stack](https://img.shields.io/badge/stack-ASP.NET%20Core%2010%20%7C%20EF%20Core%20%7C%20Aspire-2dd4a0?style=for-the-badge)
+![No build](https://img.shields.io/badge/build-none%20required-fbbf24?style=for-the-badge)
 
-DotCraft is a static single-page application that guides developers through 6 progressive phases of building MarketFlow, a real-world REST API. Each phase has dedicated course content, step-by-step guides, hands-on exercises, and a project state tracker showing which use cases are done.
+---
+
+## Overview
+
+DotCraft is a **zero-dependency, static single-page application** that turns a structured `.js` data file into a fully navigable training plan. It guides developers through 6 progressive phases of building **MarketFlow**, a real-world REST API.
+
+Each phase includes:
+- **Cours** — annotated theory with code samples
+- **Guide** — numbered step-by-step instructions
+- **Exercices** — hands-on tasks with hints and expected commit messages
+- **Projet** — live use-case tracker and milestone for that phase
+
+---
 
 ## Training path
 
 | Phase | Title | Key topics |
-| ------- | ------- | ------------ |
-| 00 | Git & Conventional Commits | Git workflow, commit conventions, repository setup |
-| 01 | .NET Foundations | Clean Architecture, Vertical Slice, MediatR, CQRS, DI |
-| 02 | Aspire & Data | .NET Aspire orchestration, SQL Server, EF Core 10, migrations |
-| 03 | TDD | xUnit, NSubstitute, FluentAssertions, Red-Green-Refactor |
-| 04 | Complete Features | 4 Vertical Slice use cases, FluentValidation, pagination |
-| 05 | Authentication | Google OAuth2, JWT Bearer, PBAC (WIP) |
+|:-----:|-------|------------|
+| `00` | **Git & Conventional Commits** | Git workflow, commit conventions, repository setup |
+| `01` | **.NET Foundations** | Clean Architecture, Vertical Slice, MediatR, CQRS, DI |
+| `02` | **Aspire & Data** | .NET Aspire orchestration, SQL Server, EF Core 10, migrations |
+| `03` | **TDD** | xUnit, NSubstitute, FluentAssertions, Red-Green-Refactor |
+| `04` | **Complete Features** | 4 Vertical Slice use cases, FluentValidation, pagination |
+| `05` | **Authentication** _(WIP)_ | Google OAuth2, JWT Bearer, PBAC |
+
+---
 
 ## Tech stack covered
 
-`ASP.NET Core 10` · `EF Core 10` · `.NET Aspire` · `MediatR` · `FluentValidation` · `xUnit` · `NSubstitute` · `FluentAssertions` · `JWT Bearer` · `Google OAuth2` · `PBAC` · `Vertical Slice` · `Clean Architecture` · `Conventional Commits`
+| Category | Technologies |
+|----------|-------------|
+| **Backend** | ASP.NET Core 10, EF Core 10, .NET Aspire |
+| **Architecture** | Clean Architecture, Vertical Slice, CQRS |
+| **Libraries** | MediatR, FluentValidation, FluentAssertions |
+| **Testing** | xUnit, NSubstitute |
+| **Auth** | JWT Bearer, Google OAuth2, PBAC |
+| **Tooling** | Conventional Commits |
+
+---
 
 ## The MarketFlow API
 
-The project built throughout the training is **MarketFlow**, a product & cart management API with:
+The project built throughout the training is a **product & cart management API** with:
 
-- 4 use cases: `CreateProduct`, `GetProducts`, `AddToCart`, `GetCart`
-- Clean Architecture (Domain / Application / Infrastructure / API)
-- Vertical Slice organization per use case
-- Permission-Based Access Control (PBAC)
+| Use case | Method | Route |
+|----------|--------|-------|
+| `CreateProduct` | `POST` | `/api/products` |
+| `GetProducts` | `GET` | `/api/products` |
+| `AddToCart` | `POST` | `/api/cart/items` |
+| `GetCart` | `GET` | `/api/cart` |
 
-## App structure
+The solution follows **Clean Architecture** (Domain / Application / Infrastructure / API) with **Vertical Slice** organization: each use case is a self-contained folder with its command, handler, validator, endpoint, and tests.
 
-```text
-index.html   — shell layout and topbar
-app.js       — rendering engine and navigation logic (ES module)
-data.js      — all course content, exercises, and phase data
-style.css    — dark theme UI
+---
+
+## Repository structure
+
 ```
+index.html   — shell layout, topbar, and Google Fonts
+app.js       — rendering engine and navigation logic (ES module)
+data.js      — all course content, exercises, guides, and phase data
+style.css    — dark theme UI (dot-grid background, sidebar, tabs)
+```
+
+> **To add or update content:** edit only [`data.js`](data.js). The schema is documented at the top of that file. Adding a new phase means appending one object to the `PHASES` array — `app.js` and `index.html` need no changes.
+
+---
 
 ## Running locally
 
-No build step required. Serve the files with any static HTTP server:
+No build step or package installation needed. Serve with any static HTTP server:
 
 ```bash
-# Using Node.js
+# Node.js (npx — no install)
 npx serve .
 
-# Using Python
+# Python
 python -m http.server 8080
 
-# Using the VS Code Live Server extension
+# VS Code — Live Server extension
 # Right-click index.html → "Open with Live Server"
 ```
 
 Then open `http://localhost:<port>` in your browser.
 
-> Opening `index.html` directly via `file://` will not work because `app.js` uses ES module imports.
+> **Note:** `file://` won't work — `app.js` uses ES module imports which require an HTTP origin.
+
+---
 
 ## Navigation
 
-- Click any **phase** in the sidebar to open it.
-- Use the **tabs** inside a phase to switch between Cours, Guide, Exercices, and Projet.
-- Use **← →** arrow keys to move between sections.
-- Click **MarketFlow** in the sidebar header to return to the intro page.
-
-## Adding or updating content
-
-All course content lives in [`data.js`](data.js). The schema is documented at the top of that file. To add a new phase, append an object to the `PHASES` array following the documented schema — no changes to `app.js` or `index.html` are needed.
+| Action | How |
+|--------|-----|
+| Open a phase | Click it in the sidebar |
+| Switch tabs | Click a tab, or use **← →** arrow keys |
+| Return to intro | Click **MarketFlow** in the sidebar header |
