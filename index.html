@@ -32,7 +32,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 14px; scroll-behavior: smooth; }
+html { font-size: 16px; scroll-behavior: smooth; }
 body {
   font-family: var(--sans);
   background: var(--bg);
@@ -69,13 +69,13 @@ body::before {
   height: 52px; padding: 0 24px; gap: 0;
 }
 .top-logo {
-  font-family: var(--mono); font-size: 12px; font-weight: 600;
+  font-family: var(--mono); font-size: 15px; font-weight: 600;
   letter-spacing: .12em; color: var(--c1);
   padding-right: 20px; border-right: 1px solid var(--bd);
   text-shadow: 0 0 20px rgba(91,168,255,.4);
 }
 .top-sub {
-  font-family: var(--mono); font-size: 9px; color: var(--tx3);
+  font-family: var(--mono); font-size: 11px; color: var(--tx3);
   padding: 0 20px; letter-spacing: .08em;
 }
 .top-spacer { flex: 1; }
@@ -84,7 +84,7 @@ body::before {
   padding: 0 20px; border-left: 1px solid var(--bd);
 }
 .top-tag {
-  font-family: var(--mono); font-size: 8px; padding: 2px 7px;
+  font-family: var(--mono); font-size: 10px; padding: 2px 7px;
   border-radius: 3px; background: var(--s3); border: 1px solid var(--bd);
   color: var(--tx3); letter-spacing: .04em;
 }
@@ -107,16 +107,16 @@ body::before {
   border-bottom: 1px solid var(--bd);
 }
 .sb-proj-eyebrow {
-  font-family: var(--mono); font-size: 8px; color: var(--tx3);
+  font-family: var(--mono); font-size: 10px; color: var(--tx3);
   letter-spacing: .12em; text-transform: uppercase; margin-bottom: 4px;
 }
 .sb-proj-name {
-  font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--c1);
+  font-family: var(--mono); font-size: 16px; font-weight: 600; color: var(--c1);
   cursor: pointer; transition: color .15s;
 }
 .sb-proj-name:hover { color: var(--tx); }
 .sb-section-lbl {
-  font-family: var(--mono); font-size: 7px; font-weight: 600;
+  font-family: var(--mono); font-size: 9px; font-weight: 600;
   letter-spacing: .18em; color: var(--tx4); text-transform: uppercase;
   padding: 14px 16px 6px;
 }
@@ -135,12 +135,12 @@ body::before {
 }
 .sb-phase.active .sb-dot, .sb-phase:hover .sb-dot { opacity: 1; }
 .sb-ph-info { flex: 1; }
-.sb-code { font-family: var(--mono); font-size: 9px; color: var(--tx3); }
-.sb-name { font-family: var(--mono); font-size: 10px; color: var(--tx2); margin-top: 1px; }
+.sb-code { font-family: var(--mono); font-size: 11px; color: var(--tx3); }
+.sb-name { font-family: var(--mono); font-size: 12px; color: var(--tx2); margin-top: 1px; }
 .sb-phase.active .sb-name { color: var(--tx); }
 .sb-subtabs { display: flex; flex-direction: column; background: var(--s1); }
 .sb-subtab {
-  font-family: var(--mono); font-size: 9px; color: var(--tx3);
+  font-family: var(--mono); font-size: 11px; color: var(--tx3);
   padding: 6px 16px 6px 34px; cursor: pointer; transition: color .1s;
   border-left: 2px solid transparent;
 }
@@ -150,7 +150,7 @@ body::before {
   margin-top: auto; padding: 14px 16px 18px;
   border-top: 1px solid var(--bd);
 }
-.sb-foot-lbl { font-family: var(--mono); font-size: 8px; color: var(--tx3); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
+.sb-foot-lbl { font-family: var(--mono); font-size: 10px; color: var(--tx3); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
 .sb-progbar { height: 3px; background: var(--bd); border-radius: 2px; }
 .sb-progfill { height: 100%; border-radius: 2px; transition: width .4s, background .3s; }
 
@@ -159,15 +159,15 @@ body::before {
 .page { padding: 40px 52px; max-width: 900px; }
 
 /* Phase header */
-.ph-eyebrow { font-family: var(--mono); font-size: 8px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 10px; }
-.ph-title { font-family: var(--mono); font-size: 28px; font-weight: 600; color: var(--tx); line-height: 1.2; }
+.ph-eyebrow { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 10px; }
+.ph-title { font-family: var(--mono); font-size: 35px; font-weight: 600; color: var(--tx); line-height: 1.2; }
 .ph-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
-.ph-badge { font-family: var(--mono); font-size: 8px; padding: 3px 9px; border-radius: 3px; letter-spacing: .04em; }
+.ph-badge { font-family: var(--mono); font-size: 10px; padding: 3px 9px; border-radius: 3px; letter-spacing: .04em; }
 
 /* Section tabs */
 .sec-tabs { display: flex; gap: 1px; margin: 28px 0 32px; border-bottom: 1px solid var(--bd); }
 .stab {
-  font-family: var(--mono); font-size: 8px; font-weight: 600; letter-spacing: .12em;
+  font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .12em;
   text-transform: uppercase; padding: 9px 18px; cursor: pointer; background: none;
   border: none; color: var(--tx3); border-bottom: 2px solid transparent;
   margin-bottom: -1px; transition: color .12s;
@@ -178,14 +178,14 @@ body::before {
 /* Content sections */
 .section { margin-bottom: 40px; }
 .section-heading {
-  font-family: var(--mono); font-size: 8px; font-weight: 600; letter-spacing: .18em;
+  font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .18em;
   text-transform: uppercase; color: var(--tx3); margin-bottom: 20px;
   display: flex; align-items: center; gap: 12px;
 }
 .section-heading::after { content: ''; flex: 1; height: 1px; background: var(--bd); }
 
 /* Intro text */
-.intro-lead { font-size: 16px; line-height: 1.9; color: var(--tx2); margin-bottom: 22px; }
+.intro-lead { font-size: 19px; line-height: 1.9; color: var(--tx2); margin-bottom: 22px; }
 .intro-lead strong { color: var(--tx); font-weight: 600; }
 .intro-lead em { font-style: italic; color: var(--tx); }
 
@@ -193,7 +193,7 @@ body::before {
   border-left: 3px solid var(--phase-c, var(--c1));
   padding: 16px 20px; border-radius: 0 var(--r) var(--r) 0;
   background: linear-gradient(to right, rgba(91,168,255,.05), transparent);
-  margin: 22px 0; font-size: 15px; font-style: italic; color: var(--tx2); line-height: 1.8;
+  margin: 22px 0; font-size: 18px; font-style: italic; color: var(--tx2); line-height: 1.8;
 }
 .callout code { font-style: normal; }
 
@@ -202,10 +202,10 @@ body::before {
   padding: 16px 20px; margin: 18px 0;
 }
 .info-box-lbl {
-  font-family: var(--mono); font-size: 8px; font-weight: 600;
+  font-family: var(--mono); font-size: 10px; font-weight: 600;
   letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; opacity: .7;
 }
-.info-box-body { font-family: var(--mono); font-size: 11px; color: var(--tx2); line-height: 1.75; }
+.info-box-body { font-family: var(--mono); font-size: 14px; color: var(--tx2); line-height: 1.75; }
 
 /* Mini-course cards */
 .course-card {
@@ -217,12 +217,12 @@ body::before {
   padding: 14px 18px; border-bottom: 1px solid var(--bd);
   background: linear-gradient(to right, rgba(91,168,255,.04), transparent);
 }
-.course-num { font-family: var(--mono); font-size: 10px; color: var(--phase-c, var(--c1)); min-width: 22px; }
-.course-title { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--tx); flex: 1; }
+.course-num { font-family: var(--mono); font-size: 12px; color: var(--phase-c, var(--c1)); min-width: 22px; }
+.course-title { font-family: var(--mono); font-size: 15px; font-weight: 500; color: var(--tx); flex: 1; }
 .course-body { padding: 16px 18px; }
-.course-text { font-size: 13px; color: var(--tx2); line-height: 1.8; margin-bottom: 14px; }
+.course-text { font-size: 16px; color: var(--tx2); line-height: 1.8; margin-bottom: 14px; }
 .course-text strong { color: var(--tx); font-weight: 500; }
-.course-text code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
+.course-text code { font-family: var(--mono); font-size: 12px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
 
 /* Step-by-step guide */
 .guide-steps { display: flex; flex-direction: column; gap: 0; margin: 14px 0; }
@@ -230,20 +230,20 @@ body::before {
 .guide-step-left { display: flex; flex-direction: column; align-items: center; width: 36px; flex-shrink: 0; }
 .guide-step-num {
   width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center;
-  justify-content: center; font-family: var(--mono); font-size: 10px; font-weight: 600;
+  justify-content: center; font-family: var(--mono); font-size: 12px; font-weight: 600;
   flex-shrink: 0; color: var(--bg);
 }
 .guide-step-line { width: 1px; flex: 1; background: var(--bd); min-height: 16px; }
 .guide-step:last-child .guide-step-line { display: none; }
 .guide-step-right { flex: 1; padding: 0 0 20px 12px; }
-.guide-step-title { font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--tx); margin-bottom: 6px; padding-top: 4px; }
-.guide-step-desc { font-size: 12px; color: var(--tx2); line-height: 1.75; margin-bottom: 8px; }
-.guide-step-desc code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
+.guide-step-title { font-family: var(--mono); font-size: 14px; font-weight: 500; color: var(--tx); margin-bottom: 6px; padding-top: 4px; }
+.guide-step-desc { font-size: 15px; color: var(--tx2); line-height: 1.75; margin-bottom: 8px; }
+.guide-step-desc code { font-family: var(--mono); font-size: 12px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
 
 /* Code blocks */
 pre {
   background: var(--s1); border: 1px solid var(--bd); border-radius: var(--r);
-  padding: 16px 18px; font-family: var(--mono); font-size: 11px;
+  padding: 16px 18px; font-family: var(--mono); font-size: 13px;
   line-height: 1.7; overflow-x: auto; color: var(--tx); white-space: pre; margin: 10px 0;
   position: relative;
 }
@@ -254,7 +254,7 @@ pre .ty { color: var(--c3); }
 pre .mt { color: var(--c4); }
 pre .va { color: var(--c5); }
 
-code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
+code { font-family: var(--mono); font-size: 12px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
 
 /* Exercises */
 .exercise {
@@ -270,20 +270,20 @@ code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding
 .ex-num {
   width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--mono); font-size: 11px; font-weight: 600; color: var(--bg);
+  font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--bg);
 }
 .ex-body { flex: 1; }
-.ex-title { font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--tx); margin-bottom: 7px; }
-.ex-desc { font-size: 13px; color: var(--tx2); line-height: 1.75; margin-bottom: 10px; }
-.ex-desc code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
+.ex-title { font-family: var(--mono); font-size: 14px; font-weight: 500; color: var(--tx); margin-bottom: 7px; }
+.ex-desc { font-size: 16px; color: var(--tx2); line-height: 1.75; margin-bottom: 10px; }
+.ex-desc code { font-family: var(--mono); font-size: 12px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
 .ex-hint {
-  font-family: var(--mono); font-size: 10px; color: var(--tx3); line-height: 1.6;
+  font-family: var(--mono); font-size: 12px; color: var(--tx3); line-height: 1.6;
   background: var(--s3); padding: 8px 12px; border-radius: 4px;
   margin-bottom: 8px; border-left: 2px solid var(--bd2);
 }
 .ex-hint::before { content: '💡  '; }
 .ex-commit {
-  font-family: var(--mono); font-size: 10px; color: var(--c2);
+  font-family: var(--mono); font-size: 12px; color: var(--c2);
   display: inline-flex; align-items: center; gap: 6px;
 }
 .ex-commit::before { content: 'git commit -m '; color: var(--tx3); }
@@ -298,21 +298,21 @@ code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
   background: var(--kpi-c, var(--bd2));
 }
-.kpi-val { font-family: var(--mono); font-size: 22px; font-weight: 600; color: var(--tx); line-height: 1; }
-.kpi-lbl { font-family: var(--mono); font-size: 8px; color: var(--tx3); letter-spacing: .08em; text-transform: uppercase; margin-top: 5px; }
+.kpi-val { font-family: var(--mono); font-size: 27px; font-weight: 600; color: var(--tx); line-height: 1; }
+.kpi-lbl { font-family: var(--mono); font-size: 10px; color: var(--tx3); letter-spacing: .08em; text-transform: uppercase; margin-top: 5px; }
 
 .uc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
 .uc-feat {
   background: var(--s2); border: 1px solid var(--bd); border-radius: var(--r); padding: 14px 16px;
   border-top: 2px solid;
 }
-.uc-feat-head { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .08em; margin-bottom: 10px; }
-.uc-item { display: flex; align-items: center; gap: 8px; padding: 5px 0; font-family: var(--mono); font-size: 10px; }
+.uc-feat-head { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .08em; margin-bottom: 10px; }
+.uc-item { display: flex; align-items: center; gap: 8px; padding: 5px 0; font-family: var(--mono); font-size: 12px; }
 .uc-done { color: var(--c2); } .uc-prog { color: var(--c3); } .uc-todo { color: var(--tx4); }
 
 .ftree {
   background: var(--s1); border: 1px solid var(--bd); border-radius: var(--r);
-  padding: 16px 18px; font-family: var(--mono); font-size: 10px; line-height: 2;
+  padding: 16px 18px; font-family: var(--mono); font-size: 12px; line-height: 2;
   overflow-x: auto; margin-bottom: 16px; color: var(--tx2);
 }
 .f-new { color: var(--c2); } .f-mod { color: var(--c3); } .f-dim { color: var(--tx4); }
@@ -322,8 +322,18 @@ code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding
   padding: 14px 18px;
   background: linear-gradient(to right, rgba(91,168,255,.04), transparent);
 }
-.ms-lbl { font-family: var(--mono); font-size: 8px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
-.ms-txt { font-size: 13px; color: var(--tx2); line-height: 1.75; font-family: var(--mono); }
+.ms-lbl { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
+.ms-txt { font-size: 16px; color: var(--tx2); line-height: 1.75; font-family: var(--mono); }
+
+/* Liens utiles */
+.liens-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:16px; margin-top:8px; }
+.liens-cat { display:flex; flex-direction:column; gap:6px; }
+.liens-cat-title { font-family:var(--mono); font-size:10px; text-transform:uppercase; letter-spacing:.12em; font-weight:600; padding:4px 0 8px; }
+.liens-item { display:flex; flex-direction:column; gap:3px; padding:10px 14px; border-radius:var(--r); background:var(--s2); border:1px solid var(--bd); border-left:3px solid var(--lc,#5ba8ff); text-decoration:none; transition:background .15s,border-color .15s; }
+.liens-item:hover { background:var(--s3); border-color:var(--lc,#5ba8ff); }
+.liens-label { font-size:13px; font-weight:600; color:var(--tx); }
+.liens-url  { font-family:var(--mono); font-size:10px; color:var(--tx3); margin-top:1px; }
+.liens-desc { font-size:12px; color:var(--tx2); }
 
 /* Nav */
 .ph-nav {
@@ -332,23 +342,23 @@ code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding
 }
 .nav-btn {
   display: flex; align-items: center; gap: 8px;
-  font-family: var(--mono); font-size: 10px; color: var(--tx3);
+  font-family: var(--mono); font-size: 12px; color: var(--tx3);
   cursor: pointer; background: var(--s2); border: 1px solid var(--bd);
   border-radius: 5px; padding: 8px 16px; transition: all .15s;
 }
 .nav-btn:hover { color: var(--tx); border-color: var(--bd2); background: var(--s3); box-shadow: 0 0 12px rgba(91,168,255,.08); }
 .nav-btn:disabled { opacity: .25; cursor: default; pointer-events: none; }
-.nav-mid { font-family: var(--mono); font-size: 9px; color: var(--tx3); }
+.nav-mid { font-family: var(--mono); font-size: 11px; color: var(--tx3); }
 
 /* Intro / homepage */
 #intro-page { padding: 56px 52px; max-width: 800px; }
 .intro-hero { margin-bottom: 40px; }
-.intro-kicker { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--c1); margin-bottom: 12px; opacity: .8; }
-.intro-title { font-family: var(--mono); font-size: 38px; font-weight: 700; color: var(--tx); line-height: 1.1; margin-bottom: 6px; }
+.intro-kicker { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--c1); margin-bottom: 12px; opacity: .8; }
+.intro-title { font-family: var(--mono); font-size: 47px; font-weight: 700; color: var(--tx); line-height: 1.1; margin-bottom: 6px; }
 .intro-title span { color: var(--c1); text-shadow: 0 0 30px rgba(91,168,255,.4); }
-.intro-tagline { font-size: 15px; color: var(--tx2); margin-top: 14px; line-height: 1.75; max-width: 560px; }
+.intro-tagline { font-size: 18px; color: var(--tx2); margin-top: 14px; line-height: 1.75; max-width: 560px; }
 .intro-pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 24px 0 36px; }
-.intro-pill { font-family: var(--mono); font-size: 9px; padding: 4px 10px; border-radius: 3px; background: var(--s3); border: 1px solid var(--bd2); color: var(--tx2); }
+.intro-pill { font-family: var(--mono); font-size: 11px; padding: 4px 10px; border-radius: 3px; background: var(--s3); border: 1px solid var(--bd2); color: var(--tx2); }
 .phase-list { display: flex; flex-direction: column; gap: 6px; }
 .pi-row {
   display: flex; align-items: center; gap: 14px;
@@ -356,11 +366,11 @@ code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding
   cursor: pointer; background: var(--s1); transition: all .15s;
 }
 .pi-row:hover { background: var(--s2); border-color: var(--bd2); box-shadow: 0 4px 20px rgba(0,0,0,.3), 0 0 0 1px var(--bd2); }
-.pi-code { font-family: var(--mono); font-size: 9px; color: var(--tx3); min-width: 22px; }
+.pi-code { font-family: var(--mono); font-size: 11px; color: var(--tx3); min-width: 22px; }
 .pi-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; box-shadow: 0 0 8px var(--pi-c); }
-.pi-name { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--tx); flex: 1; }
-.pi-desc { font-family: var(--mono); font-size: 9px; color: var(--tx3); margin-top: 2px; }
-.pi-arr { color: var(--tx3); font-size: 18px; transition: transform .15s; }
+.pi-name { font-family: var(--mono); font-size: 15px; font-weight: 500; color: var(--tx); flex: 1; }
+.pi-desc { font-family: var(--mono); font-size: 11px; color: var(--tx3); margin-top: 2px; }
+.pi-arr { color: var(--tx3); font-size: 22px; transition: transform .15s; }
 .pi-row:hover .pi-arr { transform: translateX(3px); color: var(--tx2); }
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -372,14 +382,14 @@ code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding
   background: rgba(251,191,36,.06); border: 1px solid rgba(251,191,36,.25);
   border-radius: var(--r); margin: 16px 0;
 }
-.alert-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
-.alert-body { font-size: 12px; color: var(--tx2); line-height: 1.7; }
+.alert-icon { font-size: 17px; flex-shrink: 0; margin-top: 1px; }
+.alert-body { font-size: 15px; color: var(--tx2); line-height: 1.7; }
 .alert-body strong { color: var(--c3); }
-.alert-body code { font-family: var(--mono); font-size: 10px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
+.alert-body code { font-family: var(--mono); font-size: 12px; background: var(--s3); padding: 1px 5px; border-radius: 3px; color: var(--c2); }
 
 .tag-inline {
   display: inline-flex; align-items: center; gap: 4px;
-  font-family: var(--mono); font-size: 9px; padding: 2px 8px;
+  font-family: var(--mono); font-size: 11px; padding: 2px 8px;
   border-radius: 3px; vertical-align: middle; margin: 0 2px;
 }
 </style>
@@ -1267,7 +1277,7 @@ dotnet add package FluentAssertions`
 { code:'02', name:'Aspire + Data', color:'#2dd4a0',
   desc:'.NET Aspire orchestration, SQL Server avec volume, EF Core',
   badges:['.NET Aspire','SQL Server','EF Core','Migrations','Volume'],
-  tabs:['Cours','Guide Aspire','Exercices','Projet'],
+  tabs:['Cours','Guide Aspire','Exercices','Projet','Liens utiles'],
   sections:{
     cours:{
       title:'Cours — .NET Aspire et EF Core',
@@ -1424,15 +1434,60 @@ public class CartRepository(MarketFlowDbContext db) : ICartRepository
 # Vérifier que Docker est démarré :
 docker ps  # doit afficher la liste des containers (vide est OK)`
         },
-        { num:2, title:'Installer le workload .NET Aspire',
-          desc:'Le workload Aspire ajoute les templates et les packages nécessaires.',
-          code:`dotnet workload install aspire
-# Vérifier l'installation :
-dotnet workload list  # doit afficher aspire`
+        { num:2, title:'Installer le CLI Aspire (Linux & Windows)',
+          desc:'Le CLI Aspire remplace l\'ancien workload <code>dotnet workload install aspire</code>. Il s\'installe en une commande et gère les templates, la création de projets, et le lancement des applications.',
+          code:`# Linux / macOS
+curl -sSL https://aspire.dev/install.sh | bash
+
+# Windows (PowerShell)
+irm https://aspire.dev/install.ps1 | iex
+
+# Valider l'installation (redémarrer le terminal si la commande n'est pas trouvée) :
+aspire --version
+# → 13.x.x+SHA (ex: 13.2.0+1465179b…)`
         },
-        { num:3, title:'Créer le projet AppHost',
-          desc:'L\'AppHost est le chef d\'orchestre. Il référence les autres projets.',
-          code:`# À la racine de la solution
+        { num:3, title:'Installer l\'extension VS Code Aspire',
+          desc:'L\'extension officielle Aspire (Microsoft) intègre le CLI dans VS Code : lancement F5 multi-services, dashboard intégré, débogage C#/Python/Node.js, et scaffolding de projets.',
+          code:`# Dans VS Code :
+# 1. Ouvrir la vue Extensions (Ctrl+Shift+X)
+# 2. Rechercher "Aspire" → installer l'extension publiée par Microsoft
+# 3. Ou directement depuis le Marketplace : https://aka.ms/aspire/vscode
+
+# Prérequis : Aspire CLI + .NET 10+ + VS Code 1.98+
+
+# Installer le CLI depuis VS Code (si pas encore fait) :
+# Ctrl+Shift+P → "Aspire: Install Aspire CLI (stable)"
+
+# Configurer le lancement (après création de l'AppHost) :
+# Ctrl+Shift+P → "Aspire: Configure launch.json file"
+# → F5 : démarre tous les services, attache les débogueurs, ouvre le dashboard`
+        },
+        { num:4, title:'Créer le projet AppHost',
+          desc:'Deux approches : <strong>nouveau projet complet</strong> avec <code>aspire new</code> (CLI officiel, recommandé), ou <strong>ajout à une solution existante</strong> avec <code>dotnet new aspire-apphost</code>.',
+          code:`# ─── Option A : Nouveau projet Aspire complet (template starter) ───
+# Crée une solution avec AppHost, ApiService, Web frontend, ServiceDefaults
+aspire new aspire-starter -n MarketFlow -o MarketFlow
+cd ./MarketFlow
+
+# L'AppHost généré (AppHost.cs) :
+# var builder = DistributedApplication.CreateBuilder(args);
+# var apiService = builder.AddProject<Projects.MarketFlow_ApiService>("apiservice")
+#     .WithHttpHealthCheck("/health");
+# builder.AddProject<Projects.MarketFlow_Web>("webfrontend")
+#     .WithExternalHttpEndpoints()
+#     .WithHttpHealthCheck("/health")
+#     .WithReference(apiService)
+#     .WaitFor(apiService);
+# builder.Build().Run();
+
+# Lancer immédiatement :
+aspire run
+# → 🔍 Finding apphosts...
+# → Dashboard: https://localhost:17068/login?t=<token>
+# → Ctrl+C pour arrêter
+
+# ─── Option B : Ajouter un AppHost à une solution existante (MarketFlow) ───
+# À la racine de la solution :
 dotnet new aspire-apphost -n MarketFlow.AppHost
 dotnet sln add MarketFlow.AppHost/MarketFlow.AppHost.csproj
 
@@ -1440,12 +1495,12 @@ dotnet sln add MarketFlow.AppHost/MarketFlow.AppHost.csproj
 <ProjectReference Include="../MarketFlow.API/MarketFlow.API.csproj"
                   IsAspireProjectResource="true" />`
         },
-        { num:4, title:'Ajouter le package SQL Server dans AppHost',
+        { num:5, title:'Ajouter le package SQL Server dans AppHost',
           desc:'Ce package ajoute la méthode <code>AddSqlServer()</code> au builder Aspire.',
           code:`cd MarketFlow.AppHost
 dotnet add package Aspire.Hosting.SqlServer`
         },
-        { num:5, title:'Configurer l\'AppHost avec le volume',
+        { num:6, title:'Configurer l\'AppHost avec le volume',
           desc:'Configurer SQL Server avec un volume Docker nommé pour persister les données. Sans <code>WithDataVolume()</code>, la base repart de zéro à chaque démarrage.',
           code:`// MarketFlow.AppHost/Program.cs
 var builder = DistributedApplication.CreateBuilder(args);
@@ -1460,7 +1515,7 @@ builder.AddProject<Projects.MarketFlow_API>("api")
 
 builder.Build().Run();`
         },
-        { num:6, title:'Ajouter EF Core dans Infrastructure',
+        { num:7, title:'Ajouter EF Core dans Infrastructure',
           desc:'Installer les packages EF Core SQL Server dans le projet Infrastructure.',
           code:`cd ../MarketFlow.Infrastructure
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
@@ -1470,7 +1525,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 cd ../MarketFlow.API
 dotnet add package Microsoft.EntityFrameworkCore.Design`
         },
-        { num:7, title:'Créer le DbContext et les configurations',
+        { num:8, title:'Créer le DbContext et les configurations',
           desc:'Le DbContext utilise <code>ApplyConfigurationsFromAssembly()</code> pour découvrir automatiquement les classes <code>IEntityTypeConfiguration&lt;T&gt;</code>.',
           code:`// Infrastructure/Data/MarketFlowDbContext.cs
 public class MarketFlowDbContext(DbContextOptions<MarketFlowDbContext> options)
@@ -1487,7 +1542,7 @@ public class MarketFlowDbContext(DbContextOptions<MarketFlowDbContext> options)
 services.AddDbContext<MarketFlowDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("marketflowdb")));`
         },
-        { num:8, title:'Générer la première migration',
+        { num:9, title:'Générer la première migration',
           desc:'Les migrations sont générées depuis la racine de la solution avec les flags <code>--project</code> et <code>--startup-project</code>.',
           code:`# Depuis la racine de la solution
 dotnet ef migrations add InitialSchema \
@@ -1498,17 +1553,26 @@ dotnet ef migrations add InitialSchema \
 # Vérifier le SQL généré (fichier *_InitialSchema.cs) :
 # → doit contenir CREATE TABLE [products] et CREATE TABLE [carts]`
         },
-        { num:9, title:'Lancer l\'AppHost et vérifier',
-          desc:'Le dashboard Aspire s\'ouvre automatiquement dans le navigateur. Les deux ressources doivent être en état <em>Running</em> / <em>Healthy</em>.',
-          code:`cd MarketFlow.AppHost
+        { num:10, title:'Lancer l\'AppHost et vérifier',
+          desc:'Le dashboard Aspire s\'ouvre automatiquement. <code>aspire run</code> (CLI, recommandé) trouve l\'AppHost automatiquement depuis la racine de la solution. Les deux ressources doivent être en état <em>Running</em> / <em>Healthy</em>.',
+          code:`# ─── Méthode 1 : CLI Aspire (recommandé) ───
+# Depuis la racine de la solution — trouve l'AppHost automatiquement
+aspire run
+# → 🔍 Finding apphosts...
+#    AspireApp.AppHost/MarketFlow.AppHost.csproj
+# → Dashboard: https://localhost:17068/login?t=<token>
+# → Ctrl+C pour arrêter et fermer le dashboard
+
+# ─── Méthode 2 : dotnet run classique ───
+cd MarketFlow.AppHost
 dotnet run
 # → ouvre http://localhost:15000 (dashboard Aspire)
+
+# ─── Résultats attendus ───
 # → SQL Server démarre dans Docker
 # → migrations appliquées au démarrage de l'API
 # → GET http://localhost:5000/health → 200 OK
-
-# Vérifier la persistance : arrêter et relancer l'AppHost
-# Les données créées avant doivent toujours être là`
+# → Données persistées entre redémarrages (WithDataVolume)`
         }
       ]
     },
@@ -1553,7 +1617,41 @@ dotnet run
         { f:'Product Management', color:'#5ba8ff', items:[{l:'CreateProduct',s:'todo'},{l:'GetProducts',s:'todo'}] },
         { f:'Cart Management',    color:'#2dd4a0', items:[{l:'AddToCart',s:'todo'},{l:'GetCart',s:'todo'}] },
       ],
-      milestone:'<code>dotnet run --project AppHost</code> lance tout. Dashboard Aspire : deux ressources <em>healthy</em>. Données persistées entre redémarrages.'
+      milestone:'<code>aspire run</code> depuis la racine lance tout. Dashboard Aspire : deux ressources <em>healthy</em>. Données persistées entre redémarrages.'
+    },
+    liens:{
+      categories:[
+        { title:'Démarrage rapide', color:'#5ba8ff', items:[
+          { label:'Documentation Aspire', url:'https://aspire.dev/docs/', desc:'Vue d\'ensemble officielle et guides' },
+          { label:'Prérequis', url:'https://aspire.dev/get-started/prerequisites/', desc:'.NET 10+, Docker Desktop, VS Code 1.98+' },
+          { label:'Installer le CLI', url:'https://aspire.dev/get-started/install-cli/', desc:'Script d\'installation Linux & Windows' },
+          { label:'Extension VS Code', url:'https://aspire.dev/get-started/aspire-vscode-extension/', desc:'Run, debug, deploy sans quitter VS Code' },
+          { label:'Créer sa première app (C# AppHost)', url:'https://aspire.dev/get-started/first-app-csharp-apphost/', desc:'aspire new + aspire run — guide officiel' },
+        ]},
+        { title:'AppHost & Intégrations', color:'#2dd4a0', items:[
+          { label:'AppHost & Orchestration', url:'https://aspire.dev/get-started/app-host/', desc:'AddProject, WithReference, WaitFor' },
+          { label:'Intégrations disponibles', url:'https://aspire.dev/integrations/', desc:'SQL Server, Redis, RabbitMQ, Azure...' },
+          { label:'Service Defaults (C#)', url:'https://aspire.dev/get-started/csharp-service-defaults/', desc:'Observabilité et résilience partagées' },
+          { label:'Ajouter Aspire à un projet existant', url:'https://aspire.dev/get-started/add-aspire-existing-app/', desc:'Intégration dans une solution .NET existante' },
+        ]},
+        { title:'Dashboard & Déploiement', color:'#fbbf24', items:[
+          { label:'Dashboard Aspire', url:'https://aspire.dev/dashboard/overview/', desc:'Ressources, logs, traces, métriques en temps réel' },
+          { label:'Déploiement — Vue d\'ensemble', url:'https://aspire.dev/deployment/overview/', desc:'Manifests, Bicep, Azure Container Apps' },
+          { label:'Déployer sa première app', url:'https://aspire.dev/get-started/deploy-first-app/', desc:'aspire publish + aspire deploy' },
+        ]},
+        { title:'Référence CLI & Aide', color:'#a78bfa', items:[
+          { label:'Référence CLI complète', url:'https://aspire.dev/reference/cli/overview/', desc:'Toutes les commandes aspire' },
+          { label:'aspire new', url:'https://aspire.dev/reference/cli/commands/aspire-new/', desc:'Créer un projet depuis un template' },
+          { label:'aspire run', url:'https://aspire.dev/reference/cli/commands/aspire-run/', desc:'Lancer l\'orchestration locale' },
+          { label:'Troubleshooting', url:'https://aspire.dev/get-started/troubleshooting/', desc:'Problèmes courants et solutions' },
+        ]},
+        { title:'Communauté', color:'#f472a8', items:[
+          { label:'GitHub microsoft/aspire', url:'https://github.com/microsoft/aspire', desc:'Code source, issues, discussions' },
+          { label:'Discord Aspire', url:'https://discord.com/invite/raNPcaaSj8', desc:'Communauté en temps réel' },
+          { label:'Blog .NET Aspire', url:'https://devblogs.microsoft.com/aspire', desc:'Articles et annonces officielles' },
+          { label:'YouTube @aspiredotdev', url:'https://www.youtube.com/@aspiredotdev', desc:'Vidéos, démos, conférences' },
+        ]},
+      ]
     }
   }
 },
@@ -1794,8 +1892,8 @@ public async Task Handle_ReturnsAllProducts_WhenRepositoryHasData()
     }
   }
 },
-// ══ PHASE 05 ══════════════════════════════════════════════════
-{ code:'05', name:'Features complètes', color:'#a78bfa',
+// ══ PHASE 04 ══════════════════════════════════════════════════
+{ code:'04', name:'Features complètes', color:'#a78bfa',
   desc:'4 use cases vertical slice, synthèse de toutes les phases',
   badges:['Vertical Slice','CQRS','FluentValidation','Pagination','Round 2'],
   tabs:['Cours','Exercices','Projet'],
@@ -1805,12 +1903,12 @@ public async Task Handle_ReturnsAllProducts_WhenRepositoryHasData()
       blocks:[
         { type:'concept', num:'01', title:'Synthèse — ce que chaque phase a apporté',
           text:`Chaque phase a posé une brique sur le même projet. Cette dernière phase assemble tout en 4 use cases complets. L'architecture Vertical Slice (détaillée en <strong>Phase 01 — Architecture</strong>) s'applique ici à leur forme finale : chaque use case est un silo autonome avec son command/query, handler, validator, endpoint et tests.<br><br>Supprimer une feature = <code>rm -rf Features/ProductManagement/CreateProduct</code>. Aucune autre feature n’est touchée.`,
-          code:`// Bilan des 5 phases sur la même base de code
+          code:`// Bilan des phases sur la même base de code
 // Phase 00 → Conventional Commits : chaque use case a un historique lisible
 // Phase 01 → Clean Architecture + Vertical Slice : structure en place
 // Phase 02 → Aspire + EF Core : les handlers persistent vraiment en base
 // Phase 03 → TDD : GetProductsHandler et AddToCartHandler étaient RED avant GREEN
-// Phase 04 → Google OAuth2 direct : le customerId est le Google sub (string)
+// Phase 05 → Sécurité (Google OAuth2 / JWT) — à venir
 
 // Structure finale dans MarketFlow.API
 Features/
@@ -1906,7 +2004,7 @@ app.MapGet("/api/products",
         },
         { type:'concept', num:'05', title:'UC3+UC4 — AddToCart et GetCart',
           text:`AddToCart utilise <code>ICurrentUserService</code> pour récupérer le Google sub — le handler reste UI-agnostique et testable sans mock ASP.NET. Il crée le panier s'il n'existe pas, puis délègue à <code>cart.AddItem()</code> qui applique la règle de fusion. GetCart retourne le panier avec <code>Total</code> calculé par l'agrégat — jamais stocké.`,
-          code:`// AddToCartHandler — ICurrentUserService (Phase 04) → pas de ClaimsPrincipal dans Application
+          code:`// AddToCartHandler — ICurrentUserService → pas de ClaimsPrincipal dans Application
 var customerId = _currentUser.UserId
     ?? throw new UnauthorizedAccessException("User not authenticated.");
 
@@ -1954,7 +2052,7 @@ return new CartDto(
       }
     ],
     proj:{
-      kpis:{ 'Use cases':'4/4', 'Tests':'20+', 'Endpoints':'5', 'Sécurité':'✓' },
+      kpis:{ 'Use cases':'4/4', 'Tests':'20+', 'Endpoints':'5', 'Sécurité':'✗' },
       files:`📁 src/
   📁 MarketFlow.API/
     📁 Features/
@@ -2131,6 +2229,7 @@ function renderPhase() {
   if (tabName === 'Guide Husky')    inner += renderGuide(s.guide, p.color);
   if (tabName === 'Guide Aspire')   inner += renderGuide(s.guide, p.color);
   if (tabName === 'Guide Solution') inner += renderGuide(s.guide, p.color);
+  if (tabName === 'Liens utiles')   inner += renderLiens(s.liens, p.color);
   if (tabName === 'Exercices')      inner += renderExercices(s.exercices, p.color);
   if (tabName === 'Projet')         inner += renderProjet(s.proj, p.color);
 
@@ -2248,6 +2347,26 @@ function renderProjet(proj, color) {
     <div class="milestone" style="border-left-color:${color};border-color:${color}20">
       <div class="ms-lbl" style="color:${color}">Milestone</div>
       <div class="ms-txt">${proj.milestone}</div>
+    </div>
+  </div>`;
+}
+
+function renderLiens(liens, color) {
+  return `<div class="section">
+    <div class="section-heading">aspire.dev — Liens utiles</div>
+    <div class="liens-grid">
+      ${liens.categories.map(cat => `
+        <div class="liens-cat">
+          <div class="liens-cat-title" style="color:${cat.color}">${cat.title}</div>
+          ${cat.items.map(item => `
+            <a href="${item.url}" target="_blank" rel="noopener" class="liens-item" style="--lc:${cat.color}">
+              <div class="liens-label">${item.label}</div>
+              <div class="liens-url">${item.url.replace('https://','')}</div>
+              <div class="liens-desc">${item.desc}</div>
+            </a>
+          `).join('')}
+        </div>
+      `).join('')}
     </div>
   </div>`;
 }
